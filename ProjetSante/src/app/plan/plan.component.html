@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <body>
@@ -48,6 +48,7 @@
         [excludeDays]="[0,7]" locale="fr">
       </mwl-calendar-month-view>
 
+<<<<<<< HEAD
       <mwl-calendar-week-view *ngSwitchCase="CalendarView.Week" [viewDate]="viewDate" [events]="events" locale="fr"
         (eventClicked)="eventClicked($event)" [refresh]="refresh">
       </mwl-calendar-week-view>
@@ -61,3 +62,47 @@
 </body>
 
 </html>
+=======
+      
+  <div class="table-responsive">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Primary color</th>
+          <th>Secondary + text color</th>
+  
+        </tr>
+      </thead>
+  
+      <tbody>
+        <tr *ngFor="let event of events">
+          <td>
+            <input type="text" class="form-control" [(ngModel)]="event.title" (keyup)="refresh.next()" />
+          </td>
+        <td>
+            <input
+                    type="color"
+                    [(ngModel)]="EventColor.Primary"
+                    (change)="refresh.next()"
+                  />
+          </td> -->
+    <!-- <td>
+            <input
+                    type="color"
+                    [(ngModel)]="EventColor.secondary"
+                    (change)="refresh.next()"> 
+            <input
+                  type="color"
+                  [ngModel]="EventColor.secondaryText ?? '#1e90ff'"
+                  (ngModelChange)="EventColor.secondaryText = $event"
+                  (change)="refresh.next()"
+                />
+          <td>
+            <input class="form-control" type="text" mwlFlatpickr [(ngModel)]="event.start"
+              (ngModelChange)="refresh.next()" dateFormat="Y-m-dTH:i" altFormat="F j, Y H:i" placeholder="Not set" />
+          </td>  -->
+    <!-- </tbody>
+    </table>
+  </div>  -->
+>>>>>>> d211a6a365f5e412bfaed1bacfee03ce34a22244

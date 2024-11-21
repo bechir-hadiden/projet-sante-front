@@ -15,6 +15,8 @@ import { RegisterComponent } from './register/register.component';
 import { ToastrModule } from 'ngx-toastr';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { VerifEmailComponent } from './verif-email/verif-email.component'; 
+import { QuestionnaireComponent } from './questionnaire/questionnaire.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 
 registerLocaleData(localeFr , 'fr'); 
@@ -26,6 +28,8 @@ registerLocaleData(localeFr , 'fr');
     AccueilComponent,
     RegisterComponent,
     VerifEmailComponent,
+    QuestionnaireComponent,
+    NavbarComponent
     
   ],
   imports: [

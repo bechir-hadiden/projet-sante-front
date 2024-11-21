@@ -15,7 +15,6 @@ import {
   isSameMonth,
   addHours,
 } from 'date-fns';
-import { AuthService } from '../Services/auth.service';
 // CalendarEvent,
 const colors: Record<string, EventColor> = {
   red: {
@@ -32,13 +31,16 @@ const colors: Record<string, EventColor> = {
   },
 };
 @Component({
-    selector: 'app-plan',
-    templateUrl: './plan.component.html',
-    styleUrl: './plan.component.css',
-    standalone :false ,
+  selector: 'app-formation',
+  templateUrl: './formation.component.html',
+  styleUrls: ['./formation.component.css'],
+  
 })
-export class PlanComponent {
- 
+
+
+export class FormationComponent {
+
+  
  events: CalendarEvent[] = [
   {
     start: new Date(new Date().getFullYear(), 1 , 6),
@@ -199,5 +201,12 @@ export class PlanComponent {
   }
 
 }
+
+
+
+
+
+
+
 
 

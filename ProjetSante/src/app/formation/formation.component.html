@@ -1,6 +1,5 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
-
 <body>
   <br><br>
   <div id="calendar-centainer">
@@ -32,11 +31,11 @@
             <div class="btn btn-primary" (click)="setView(CalendarView.Week)"
               [class.selected]="view === CalendarView.Week">Week
             </div>
-            <div class="btn btn-primary" (click)="setView(CalendarView.Day)" [class.active]="view === CalendarView.Day">
-              Day
+            <div class="btn btn-primary" (click)="setView(CalendarView.Day)"
+              [class.active]="view === CalendarView.Day">Day
             </div>
           </div>
-          <button class="btn btn-primary pull-right" (click)="addEvent()">Add new</button>
+          <button class="btn btn-primary pull-right"  (click)="addEvent()">Add new</button>
         </div>
       </div>
     </div>
@@ -48,16 +47,15 @@
         [excludeDays]="[0,7]" locale="fr">
       </mwl-calendar-month-view>
 
-      <mwl-calendar-week-view *ngSwitchCase="CalendarView.Week" [viewDate]="viewDate" [events]="events" locale="fr"
-        (eventClicked)="eventClicked($event)" [refresh]="refresh">
+      <mwl-calendar-week-view *ngSwitchCase="CalendarView.Week" [viewDate]="viewDate" [events]="events"
+        locale="fr" (eventClicked)="eventClicked($event)" [refresh]="refresh">
       </mwl-calendar-week-view>
 
-      <mwl-calendar-day-view *ngSwitchCase="CalendarView.Day" [viewDate]="viewDate" [events]="events" locale="fr"
-        (eventClicked)="eventClicked($event)" [refresh]="refresh">
+      <mwl-calendar-day-view *ngSwitchCase="CalendarView.Day" [viewDate]="viewDate" [events]="events"
+        locale="fr" (eventClicked)="eventClicked($event)" [refresh]="refresh">
       </mwl-calendar-day-view>
     </span>
   </div>
 
 </body>
-
-</html>
+</html> -->
